@@ -55,14 +55,14 @@ fun MainScreen (){
         }
     )
     {
-        innerPadding ->
-      ContentScreen(modifier = Modifier.padding(innerPadding),selectedIndex = selectedItem)
+      innerPadding->
+      ContentScreen(modifier = Modifier.padding(innerPadding), selectedIndex = selectedItem)
 
     }
 }
 
 @Composable
-fun ContentScreen (modifier: Modifier = Modifier,selectedIndex: Int){
+fun ContentScreen (modifier: Modifier = Modifier, selectedIndex: Int){
 
     when (selectedIndex){
         0 -> HomeScreen()
